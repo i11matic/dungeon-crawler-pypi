@@ -10,7 +10,7 @@ def test_item_creation():
     test_item = Item(
         name="dummy_item", description="dummy_description", value="dummy_value"
     )
-    assert test_item.get_info() == {
+    assert test_item.__dict__ == {
         "name": "dummy_item",
         "description": "dummy_description",
         "value": "dummy_value",
